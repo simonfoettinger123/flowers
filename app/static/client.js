@@ -35,11 +35,13 @@ function analyze() {
       el("progressbar_2").innerHTML = `${response["results"][1][1]} %`;
       el("progressbar_3").innerHTML = `${response["results"][2][1]} %`;
       el("progressbar_4").innerHTML = `${response["results"][3][1]} %`;
+	  el("progressbar_5").innerHTML = `${response["results"][4][1]} %`;
 
       el("label_1").innerHTML = `${response["results"][0][0]}`;
       el("label_2").innerHTML = `${response["results"][1][0]}`;
       el("label_3").innerHTML = `${response["results"][2][0]}`;
       el("label_4").innerHTML = `${response["results"][3][0]}`;
+	  el("label_5").innerHTML = `${response["results"][4][0]}`;
 
       el("progressbar_1").setAttribute('style', 'width:'+Number(response["results"][0][1])+'%')
       el("progressbar_1").setAttribute('aria-valuenow', response["results"][0][1]);
@@ -49,6 +51,8 @@ function analyze() {
       el("progressbar_3").setAttribute('aria-valuenow', response["results"][2][1]);
       el("progressbar_4").setAttribute('style', 'width:'+Number(response["results"][3][1])+'%')
       el("progressbar_4").setAttribute('aria-valuenow', response["results"][3][1]);
+	  el("progressbar_5").setAttribute('style', 'width:'+Number(response["results"][4][1])+'%')
+      el("progressbar_5").setAttribute('aria-valuenow', response["results"][4][1]);
     }
     el("analyze-button").innerHTML = "Analyze";
   };
