@@ -11,7 +11,7 @@ from starlette.staticfiles import StaticFiles
 from starlette.templating import Jinja2Templates
 from starlette.routing import Route
 
-export_file_url = 'https://drive.google.com/u/0/uc?id=1alVxW8uqjCMutI0T7Q-hi_yqo9D3OHK-&export=download'
+export_file_url = 'https://drive.google.com/u/0/uc?id=1uL84hKJKsPZm4lcB0JV6ZpmwTV0_pZRC&export=download'
 export_file_name = 'export.pkl'
 
 classes = ['daisy', 'dandelion', 'rose', 'sunflower','tulip']
